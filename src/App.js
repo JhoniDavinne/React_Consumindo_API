@@ -6,7 +6,7 @@ import { PersistGate } from "redux-persist/integration/react";
 import store, { persistor } from "./store";
 import history from "./services/history";
 import GlobalStyles from "./styles/GlobalStyles";
-import Header from "./components/header";
+import Header from "./components/Header";
 import Routes from "./routes";
 
 function App() {
@@ -17,7 +17,7 @@ function App() {
           <Header />
           <Routes />
           <GlobalStyles />
-          <ToastContainer autoClose={3000} className={"toast-container"} />
+          <ToastContainer autoClose={2000} className={"toast-container"} />
         </Router>
       </PersistGate>
     </Provider>
